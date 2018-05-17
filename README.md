@@ -1,7 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This README will provide you with all of the important information you need to
+run this application correctly. I am a Rails developer and can easily be reached with any
+questions you may have regarding this project. 
 
 Things you may want to cover:
 
