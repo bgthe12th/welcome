@@ -6,10 +6,14 @@
 
   <%= image_tag("rsz_bigstock--170899592.jpg", class: "img-responsive hero-image")%>
   <div class="centered"><h1>Fresh meals delivered to your home.</h1>
-  <h2>Get healthy meals on demand.</h2></div>
+  <h2>Get healthy meals on demand.</h2>
+<div class:"hero-button-div"><button class="hero-button"type="button">Get Started</button></div>
+</div>
+
+
+  </div>
   </div>
 
-</div>
 <!--Process-->
 <div class="container-fluid process" id="process">
   <div class="row process_inner">
@@ -17,20 +21,20 @@
       <h1>Healthy, but fast!</h1>
     </div>
     <div class="col-sm-4 text-center process_group">
-      <div><img src="img/consult.png" class="process_icons"></div>
+      <div><%= image_tag("online-shop.png", class: "img-responsive process-images")%></div>
       <h3>Order Online</h3>
       <p>You choose your meals from our constantly rotating weekly menu of over 30
          different gluten-free options.</p>
     </div>
     <div class="col-sm-4 text-center process-group">
-      <div><img src="img/proposal.png" class="process_icons"></div>
+      <div><%= image_tag("delivery-man.png", class: "img-responsive process-images")%></div>
       <h3>Delivered to your door</h3>
       <p>All of your meals are prepared and cooked by our chefs and delivered fresh
          – never frozen.
       </p>
     </div>
     <div class="col-sm-4 text-center process-group">
-      <div><img src="img/prototype.png" class="process_icons"></div>
+      <div><%= image_tag("soup.png", class: "img-responsive process-images")%></div>
       <h3>You enjoy</h3>
       <p>Our fully prepared, healthy meals are ready in under 3 minutes.
         The only thing you need to do is enjoy.
@@ -47,7 +51,7 @@
     </div>
     <div class="col-sm-3 text-center process_group">
 
-      <div><%= image_tag("chicken_frit.jpg", class: "img-responsive hero-image")%></div>
+      <div><%= image_tag("chicken_frit.jpg", class:"img-responsive hero-image")%></div>
       <h3>Item 1</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
