@@ -1,8 +1,55 @@
-<h1>Contact Us</h1>
-<p>We like to talk to our customers in real time. So go ahead and hit the "Chat" button
-at the lower right side of your screen to chat with one of our knowledgeable kid stylists or customer
-service representatives. You can also call us during our regular business ours. See our contact info below.
-We hope to hear from you really soon!</p>
+
+<!--Contact section-->
+<div class="container-fluid contact">
+  <h1>Contact Us</h1>
+  <p>We like to talk to our customers in real time. So go ahead and hit the "Chat" button
+  at the lower right side of your screen to chat with one of our healthy food specialists or customer
+  service representatives. You can also call us during our regular business ours. See our contact info below.
+  We hope to hear from you really soon!</p>
+<div class="row">
+  <!-- <div class="col-md-4" id="contact_info">
+  <div id="floating-panel">
+  <button type="button" id="drop" onclick="drop()">Find Me</button>
+  </div>
+ <div class="" id="map"></div>-->
+
+  </div>
+
+
+  <div class="col-md-8" id="contact">
+
+    <form id="contact_form" name="contact" onsubmit="userOutput()">
+      <div class="form-group">
+        <label for="exampleFormControlInput1" title="Required" class="glyphicon glyphicon-user"></label>
+        <input type="text" class="form-control contact-input" id="exampleFormControlInput1" required="required" placeholder="Enter Name" name="name">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1" title="Required" class="glyphicon glyphicon-envelope"></label>
+        <input type="email" required="required" class="form-control contact-input" id="exampleFormControlInput1" placeholder="Enter Email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1" title="Required" class="glyphicon glyphicon-pencil"></label>
+        <textarea class="form-control contact-input" id="comment_box" required="required" placeholder="Please enter your message here."
+         style="resize:none" cols="40" rows="5" name="text_area"></textarea>
+         <p id="char_count"></p>
+         <p id="visible-comment"></p>
+      </div>
+
+      <div class="">
+        <button class="submit-button" type="submit" id="clear_touch1" onclick="">Submit</button>
+      </div>
+      </div>
+    </form>
+  </div>
+
+  <div><h2 id="submit_message"></h2></div>
+  <!--<div class="col-md-4 col-lg-4">
+    <iframe width="300" height="450" frameborder="0" style="border:0"
+     src="https://www.google.com/maps/embed/v1/view?zoom=11&center=33.0198%2C-96.6989&key=AIzaSyALLhcEhi8YgCJiiThhyajLcqQ8jzl3AHE"
+      allowfullscreen></iframe>
+  </div>-->
+
+</div><!--end contact container-->
 
 <h2>Dallas, TX</h2>
 <h2>(800)555-5555</h2>
