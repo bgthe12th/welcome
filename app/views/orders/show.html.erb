@@ -1,0 +1,24 @@
+
+<!--<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @order.product_id %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @order.total %>
+</p>  /100.to_f, /100.to_f-->
+
+
+<div class="container">
+  <h2>Order Information</h2>
+  <strong>Order ID: </strong><%= @order.id %>
+  <strong>Product Name: </strong><%= @order.product.name %>
+  <strong>Product Price: </strong><%= number_to_currency(@order.product.price) %>
+  <strong>Total Price: </strong><%= number_to_currency(@order.total) %>
+</div>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>
