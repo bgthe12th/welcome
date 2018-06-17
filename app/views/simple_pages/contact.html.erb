@@ -1,22 +1,7 @@
 
 <!--Contact section-->
 <div class="container-fluid contact">
-  <h1>Contact Us</h1>
-  <p>We like to talk to our customers in real time. So go ahead and hit the "Chat" button
-  at the lower right side of your screen to chat with one of our healthy food specialists or customer
-  service representatives. You can also call us during our regular business ours. See our contact info below.
-  We hope to hear from you really soon!</p>
-<div class="row">
-  <!-- <div class="col-md-4" id="contact_info">
-  <div id="floating-panel">
-  <button type="button" id="drop" onclick="drop()">Find Me</button>
-  </div>
- <div class="" id="map"></div>-->
-
-  </div>
-
-
-  <div class="col-md-8" id="contact">
+  <!--<div class="col-md-8" id="contact">
 
     <form id="contact_form" name="contact" onsubmit="userOutput()">
       <div class="form-group">
@@ -40,28 +25,30 @@
       </div>
       </div>
     </form>
-  </div>
-
+  </div> -->
+<div class="col-md-8" id="contact">
   <h1>Contact Us</h1>
-
+  <p>We like to talk to our customers in real time. So go ahead and hit the "Chat" button
+  at the lower right side of your screen to chat with one of our healthy food specialists or customer
+  service representatives. You can also call us during our regular business ours or send us a message below!</p>
 <%= flash[:notice] %>
 
 <%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
 <div class="row">
   <div class="form-group">
-    <%= form.label :name %>
-    <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
+    <%= form.label :name, class: 'glyphicon glyphicon-user' %>
+    <%= form.text_field :name, class: "form-control glyphicon glyphicon-user", placeholder: "Enter Name" %>
   </div>
   <div class="form-group">
-    <%= form.label :email %>
+    <%= form.label :email, class: 'glyphicon glyphicon-envelope'%>
     <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
   </div>
   <div class="form-group">
-    <%= form.label :message %>
+    <%= form.label :message, class: 'glyphicon glyphicon-pencil'%>
     <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
   </div>
 </div>
-<%= form.submit "Send", class: "form_label" %>
+<%= form.submit "Send", class: "clear_touch1"%>
 <% end %>
 
   <div><h2 id="submit_message"></h2></div>
@@ -70,9 +57,9 @@
      src="https://www.google.com/maps/embed/v1/view?zoom=11&center=33.0198%2C-96.6989&key=AIzaSyALLhcEhi8YgCJiiThhyajLcqQ8jzl3AHE"
       allowfullscreen></iframe>
   </div>-->
-
+</div>
 </div><!--end contact container-->
 
 <h2>Dallas, TX</h2>
 <h2>(800)555-5555</h2>
-<h2>support@b&b.com</h2>
+<h2>support@f&f.com</h2>
