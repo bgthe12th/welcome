@@ -20,6 +20,15 @@ class ProductsController < ApplicationController
   # GET /products/1/edit
   def edit
   end
+# GET/searched products value & assign it to search_term variable
+  def index
+    if params[:q]
+      search_term = params[:q]
+      @products = Product.search(search_term)
+    else
+      @products = Product.all
+    end
+  end
 
   # POST /products
   # POST /products.json

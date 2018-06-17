@@ -13,15 +13,15 @@
 
   <div class="field">
     <%= form.label :product_id %>
-    <%= form.number_field :product_id %>
+    <%= form.number_field :product_id, class: 'form-control'%>
   </div>
 
   <div class="field">
     <%= form.label :total %>
-    <%= form.text_field :total %>
+    <%= form.text_field :total, class: 'form-control' %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: 'btn btn-primary' %>
   </div>
 <% end %>

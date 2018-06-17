@@ -24,14 +24,24 @@
       <a class="navbar-brand" href="#">Fresh & Fast</a>
     </div>
   <ul class="nav navbar-nav navbar-right navbar-collapse collapse">
+    <li>
+      <div class="form-inline">
+      <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+      <%= form.label :q, 'Search for:', class: 'form-inline' %>
+      <%= form.text_field :q, id:'', class: 'form-control input-sm col-sm-3 form-inline search_field', value: params[:q] %>
+      <%= form.submit class: "btn btn-primary col-sm-3" 'Search' %>
+      <% end %>
+    </div>
+    </li>
     <li><%= link_to "Home", root_path %></li>
     <li><%= link_to "About", simple_pages_about_path %></li>
     <li><%= link_to "Contact", simple_pages_contact_path %></li>
   </ul>
 </div>
 </nav>
+<div class="">
 
-
+</div>
 <%= yield %>
 
   <footer class="footer">
