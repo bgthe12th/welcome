@@ -142,6 +142,24 @@
   #submit_message {
     color:#fff;
   }
+
+.signup-page {
+  background-image: url('lady_eat_healty_bw.jpg');
+  width: 100%;
+}
+.signup-form {
+  background-color: #38ada9;
+  color: #fff;
+  opacity: .9;
+  margin: 10% 0 10% 33%;
+}
+
+.signup_button {
+  width: 100%;
+}
+
+
+
   @media only screen and (max-width: 600px) {
       .centered {
           background-color: #000;
