@@ -12,8 +12,14 @@
   </head>
   <body data-target=".navbar" data-spy="scroll">
 
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  <p class="notice" role="alert"><%= notice %></p>
+  <% if notice %>
+    <p id="notice" class="alert alert-info"><%= notice %></p>
+<% end %>
+  <p class="alert" role="alert"><%= alert %></p>
+  <% if alert %>
+    <p id="alert" class="alert alert-info"><%= notice %></p>
+<% end %>
 <nav class="navbar navbar-fixed-top navbar-custom" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
